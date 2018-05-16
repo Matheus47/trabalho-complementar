@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<meta charset="utf-8">
+	<title>Ingressos</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Pacifico');
+	</style>
+</head>
+<body>
+	<header>
+		<h1>CineUna</h1>
+	</header>
+	<div id="container">
+		<main>
+			<div class="tabela">
+				<table class="table" id="Tingresso">
+					<thead class="thead-dark">
+						<th>Tipo de ingresso</th>
+						<th>Valor</th>
+						<th>Quantidade</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="nomeprod">Meia entrada</td>
+							<td class="valprod">R$18,00</td>
+							<td>
+								<select id="meia" onchange="meiaEntrada()">
+									<option value="0">0</option>
+									<option value="18">1</option>
+									<option value="36">2</option>
+									<option value="54">3</option>
+									<option value="72">4</option>
+									<option value="90">5</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="nomeprod">Inteira</td>
+							<td class="valprod">R$36,00</td>
+							<td>
+								<select id="inteira" onchange="inteiraEntrada()">
+									<option value="0">0</option>
+									<option value="36">1</option>
+									<option value="72">2</option>
+									<option value="108">3</option>
+									<option value="144">4</option>
+									<option value="180">5</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="tabela">
+				<table class="table " id="Tcombo">
+
+					<thead class="thead-dark">
+						<th>Combo</th>
+						<th>Valor</th>
+						<th>Quantidade</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="nomeprod">Refrigerante Médio + Pipoca Média</td>
+							<td class="valprod">R$20,00</td>
+							<td>
+								<select id="combo1" onchange="combo1()">
+									<option value="0">0</option>
+									<option value="20">1</option>
+									<option value="40">2</option>
+									<option value="60">3</option>
+									<option value="80">4</option>
+									<option value="100">5</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="nomeprod">Refrigerante Grande + Pipoca Grande</td>
+							<td class="valprod">R$35,00</td>
+							<td>
+								<select id="combo2" onchange="combo2()">
+									<option value="0">0</option>
+									<option value="35">1</option>
+									<option value="70">2</option>
+									<option value="105">3</option>
+									<option value="140">4</option>
+									<option value="175">5</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="nomeprod">Refrigerante Grande + Pipoca Grande + Chocolate</td>
+							<td class="valprod">R$50,00</td>
+							<td>
+								<select id="combo3" onchange="combo3()">
+									<option value="0">0</option>
+									<option value="50">1</option>
+									<option value="100">2</option>
+									<option value="150">3</option>
+									<option value="200">4</option>
+									<option value="250">5</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
+		<aside>
+			<div class="ticket">
+				<div id="nomeFilme"></div>
+				<div id="horarioFilme"></div>
+				<div id="showMeia"></div>
+				<div id="showInteira"></div>
+				<div id="showCombo1"></div>
+				<div id="showCombo2"></div>
+				<div id="showCombo3"></div>
+				<div id="total">Total: 0</div>
+			</div>
+		</aside>
+	</div>
+
+	<footer>
+		<h2>Feito por Matheus <sub>318125895</sub></h2>
+	</footer>
+	<script type="text/javascript" src="js/ingresso.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>

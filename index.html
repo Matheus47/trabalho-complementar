@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">  	
+	<meta charset="utf-8">
+	<title>CineUna</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Pacifico');
+	</style>
+</head>
+<body>
+	<header>
+		<h1>CineUna</h1>
+	</header>
+	<main>
+		<h3>EM EXIBIÇÃO</h3>
+		<div id="accordion">
+			<div class="opcaofilme">
+				<div class="" id="headingOne">
+		      		<h5>
+			        	<a class="filme" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			         		Os vingadores: Guerra Infinita
+			        	</a>
+		      		</h5>
+		    	</div>
+		    	<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+		    		<div class="cartaz">
+						<div class="sinopse">
+							<div class="imagem">
+								<img src="img/filme1.png">
+							</div>
+							<div class="texto">
+								<p>Os Vingadores e seus aliados Super Heróis devem se dispor a sacrificar tudo em uma tentativa de derrotar o poderoso Thanos antes que seu ataque de devastação e ruina dê um fim ao universo.</p>
+							</div>
+							<form>
+								<input type="radio" name="horario" onclick="horarios('19:00')">19:00
+								<input type="radio" name="horario" onclick="horarios('20:00')">20:00
+								<input type="radio" name="horario" onclick="horarios('21:00')">21:00
+								<a href="ingressos.html"><button type="button" class="btn btn-primary" name="comprar" onclick="nomeFilme('Os vingadores: Guerra Infinita')">Confirmar</button></a>
+								<button type="button" class="btn btn-dark" name="fechar" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Fechar</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="opcaofilme">
+				<div class="" id="headingTwo">
+		      		<h5>
+			        	<a class="filme" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+			         		Tudo que quero
+			        	</a>
+		      		</h5>
+		    	</div>
+		    	<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+		    		<div class="cartaz">
+						<div class="sinopse">
+							<div class="imagem">
+								<img src="img/filme2.png">
+							</div>
+							<div class="texto">
+								<p>O mundo é um lugar confuso para Wendy (Dakota Fanning), uma jovem, que apesar do autismo, é independente e brilhante. Wendy escreve histórias de fantasia em seu tempo livre. Quando ela descobre uma competição decide terminar seu roteiro e participar. Agora o problema é entregar o roteiro. Com seu pequeno cão e apenas alguns dólares no bolso, Wendy decide corajosamente ir em busca de seu sonho, embarcando numa aventura repleta de desafios e surpresas.</p>
+							</div>
+							<form>
+								<input type="radio" name="horario" onclick="horarios('19:00')">19:00
+								<input type="radio" name="horario" onclick="horarios('20:00')">20:00
+								<input type="radio" name="horario" onclick="horarios('21:00')">21:00
+								<a href="ingressos.html"><button type="button" class="btn btn-primary" name="comprar" onclick="nomeFilme('Tudo que quero')">Confirmar</button></a>
+								<a href="ingressos.html"><button type="reset" class="btn btn-dark" name="fechar" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Fechar</button></a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="opcaofilme">
+				<div class="" id="headingThree">
+		      		<h5>
+			        	<a class="filme" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+			         		Somente o mar sabe
+			        	</a>
+		      		</h5>
+		    	</div>
+		    	<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+		    		<div class="cartaz">
+						<div class="sinopse">
+							<div class="imagem">
+								<img src="img/filme3.png">
+							</div>
+							<div class="texto">
+								<p>Donald Crowhurst (Colin Firth) é um célebre velejador que decide fazer de tudo para vencer a Golden Globe Race de 1968. No entanto, sua tentativa desastrada na competição acaba fazendo com que ele embarque em uma jornada perigosa e complexa.</p>
+							</div>
+							<form>
+								<input type="radio" name="horario" onclick="horarios('19:00')">19:00
+								<input type="radio" name="horario" onclick="horarios('20:00')">20:00
+								<input type="radio" name="horario" onclick="horarios('21:00')">21:00
+								<a href="ingressos.html"><button type="button" class="btn btn-primary" name="comprar" onclick="nomeFilme('Somente o mar sabe')">Confirmar</button></a>
+								<button type="button" class="btn btn-dark" name="fechar" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Fechar</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="opcaofilme">
+		  		<div class="" id="headingFour">
+		      		<h5>
+			        	<a class="filme" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+			         		Deixe a luz do sol entrar
+			        	</a>
+		      		</h5>
+		    	</div>
+				<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+					<div class="cartaz">
+						<div class="sinopse">
+							<div class="imagem">
+								<img src="img/filme4.png">
+							</div>
+							<div class="texto">
+									<p>Isabelle é uma mãe divorciada, artista plástica de sucesso e mora Paris. Apesar de viver na cidade do amor, ela não tem muita sorte em seus relacionamentos, mas nunca desistiu de encontrar o parceiro ideal. Ela está em busca de um novo amor, mas um que seja verdadeiro.</p>
+							</div>
+							<form>
+								<input type="radio" name="horario" onclick="horarios('19:00')">19:00
+								<input type="radio" name="horario" onclick="horarios('20:00')">20:00
+								<input type="radio" name="horario" onclick="horarios('21:00')">21:00
+								<a href="ingressos.html"><button type="button" class="btn btn-primary" name="comprar" onclick="nomeFilme('Deixe a luz do sol entrar')">Confirmar</button></a>
+								<button type="button" class="btn btn-dark" name="fechar" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Fechar</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<h2>Feito por Matheus <sub>318125895</sub></h2>
+	</footer>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
