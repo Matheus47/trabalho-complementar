@@ -60,6 +60,10 @@ div.texto{
 	color: white;
 }
 
+.tempo{
+	padding-top: 65px;
+}
+
 h5{
 	color: #DC143C;
 	display: flex;
