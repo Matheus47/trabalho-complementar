@@ -81,12 +81,12 @@ img{
 /* css aplicado para a página de ingressos */
 
 aside{
-	flex: 50%;
+	flex: 45%;
  	padding: 32px;
 }
 
 main{
-	flex: 50%;
+	flex: 45%;
 	padding: 64px;
 }
 
