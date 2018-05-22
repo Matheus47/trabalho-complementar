@@ -75,16 +75,15 @@ function combo3(){
 }
 
 function showBilhete(){
+	// faz a soma dos valores de cada opção selecionada
 	var soma = parseInt(localStorage.getItem("Meia Entrada")) + parseInt(localStorage.getItem("Inteira")) + parseInt(localStorage.getItem("Combo 1")) + parseInt(localStorage.getItem("Combo 2")) + parseInt(localStorage.getItem("Combo 3"));
-	window.localStorage.setItem("totalCompra", soma);
-	document.getElementById("total").innerHTML = "Total:" + " " + localStorage.getItem("totalCompra");
-}
 
-
-
-
-function mostrar(){
-	document.getElementById("total").innerHTML = localStorage.getItem("Inteira");
-	document.getElementById("result2").innerHTML = localStorage.getItem("horario");
-	localStorage.key(0);
+	//verifica se o valor é NaN e trata para que apresente 0 no lugar
+	if(Number.isNaN(soma)){
+		window.localStorage.setItem("totalCompra", 0);
+		document.getElementById("total").innerHTML = "Total:" + " " + localStorage.getItem("totalCompra");
+	}else{
+		window.localStorage.setItem("totalCompra", soma);
+		document.getElementById("total").innerHTML = "Total:" + " " + localStorage.getItem("totalCompra");
+	}
 }
